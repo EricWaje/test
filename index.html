@@ -10,12 +10,19 @@
 <body>
     <div class="container">
         <form action="" method="POST">
-            <input type="text" placeholder="Nombre completo">
-            <input type="email" placeholder="email@email.com">
-            <textarea placeholder="Comentarios" name="" id="" cols="30" rows="10"></textarea>
-            <input type="submit" value="Enviar" class="enviar">
+            <input type="text" placeholder="Nombre completo" class="nombreCompleto">
+            <span class="requiredName"></span>
+            <input type="email" placeholder="email@email.com" class="email">
+            <textarea placeholder="Comentarios" name="" id="" cols="30" rows="10" class="textArea"></textarea>
+            <input type="submit" value="Enviar" class="enviar" id="submit">
         </form>
     </div>
+    <!-- SWEET ALERT -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- EMAIL JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
+    </script>
+    <!-- SCRIPT PROPIO -->
     <script src="app.js"></script>
 </body>
 </html>
